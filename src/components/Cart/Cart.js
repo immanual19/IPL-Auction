@@ -17,8 +17,7 @@ const Cart = (props) => {
             <h3>Total Price: $ {totalPrice}</h3>
         </div>
 
-        <div>
-           <h5>Name: </h5> 
+        <div className="selected-players">
         </div>
         </div>
     );

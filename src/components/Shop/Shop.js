@@ -15,9 +15,25 @@ const Shop = () => {
     },[])
     const handleAddPlayer=(player)=>{
         //console.log('Product Added',player);
-        
-        const newCart=[...playersCart,player];
-        setPlayersCart(newCart);
+        let flag=0;
+        for(let i=0;i<playersCart.length;i++)
+        {
+            
+            const addingNewPlayer=playersCart[i];
+            if(addingNewPlayer.name==player.name)
+            {
+                flag=1;
+            }
+        }
+        if(flag==0)
+        {
+            const newCart=[...playersCart,player];
+            setPlayersCart(newCart);
+        }
+        else
+        {
+            alert("This player is already added. Please select another player.");
+        }
     }
     return (
         <div className="main-container">

@@ -3,6 +3,7 @@ import './Header.css';
 const Header = () => {
     return (
         <div className="header">
+        <h1>IPL Auction 2021</h1>
         <nav>
         <a href="/shop">Players</a>
         <a href="/review">Selected Players</a>
