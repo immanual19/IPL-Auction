@@ -7,7 +7,7 @@ const Shop = () => {
     const[players,setPlayers]=useState([]);
     const [playersCart,setPlayersCart]=useState([]);
     useEffect(()=>{
-        fetch('https://api.mocki.io/v1/3c0e7ea5')
+        fetch('https://api.mocki.io/v1/c922e83b')
         .then(res=>res.json())
         // .then(data=>console.log(data))
         .then(data=>setPlayers(data))

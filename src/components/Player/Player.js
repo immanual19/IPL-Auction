@@ -9,7 +9,7 @@ const Player = (props) => {
         <div className="player">
             <div className="info-section">
                 <img className="image" src={image} alt=""/>
-                <h3 className="player-name">Name : {name}</h3>
+                <h4 className="player-name">Name:{name}</h4>
                 <h5>Base Price: $ {base_price}</h5>
                 <button className="main-button" onClick={()=>props.handleAddPlayer(props.player)}><FontAwesomeIcon icon={faShoppingCart}/>Add to Team</button>
             </div>

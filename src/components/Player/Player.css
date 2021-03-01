@@ -3,7 +3,8 @@
     border-bottom: 1px solid lightgray;
     margin: 5px;
     padding: 5px;
-    border: 1px solid red;
+    box-shadow: 5px 5px lightgray;
+    border-radius: 10px;
     width: 20%;
     height: 325px;
 }

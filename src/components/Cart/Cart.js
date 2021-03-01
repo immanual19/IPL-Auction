@@ -13,12 +13,12 @@ const Cart = (props) => {
         <div>
         <div>
             <h2>Team Summary</h2>
-            <h3>Player selected: {props.playersCart.length}</h3>
+            <h3>Player selected: {playersCart.length}</h3>
             <h3>Total Price: $ {totalPrice}</h3>
         </div>
 
         <div>
-            
+           <h5>Name: </h5> 
         </div>
         </div>
     );
