@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './Cart.css';
 const Cart = (props) => {
    // console.log(props.playersCart);
    const playersCart=props.playersCart;
@@ -10,7 +10,7 @@ const Cart = (props) => {
        totalPrice=totalPrice+player.base_price;
    }
     return (
-        <div>
+        <div className="cart-item">
         <div>
             <h2>Team Summary</h2>
             <h3>Player selected: {playersCart.length}</h3>
@@ -18,6 +18,9 @@ const Cart = (props) => {
         </div>
 
         <div className="selected-players">
+        {
+            playersCart.map(player=><p className="addedPlayer">Name: {player.name} <br/> Base Price: ${player.base_price}</p>)
+        }
         </div>
         </div>
     );
