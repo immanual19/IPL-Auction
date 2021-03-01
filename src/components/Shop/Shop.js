@@ -15,6 +15,7 @@ const Shop = () => {
     },[])
     const handleAddPlayer=(player)=>{
         //console.log('Product Added',player);
+        
         const newCart=[...playersCart,player];
         setPlayersCart(newCart);
     }
@@ -22,7 +23,7 @@ const Shop = () => {
         <div className="main-container">
         <div className="player-container">
         {
-            players.map(player=><Player handleAddPlayer={handleAddPlayer} player={player}></Player>)
+            players.map(player=><Player handleAddPlayer={handleAddPlayer} player={player} key={player}></Player>)
         }
         </div>
 
