@@ -19,7 +19,7 @@ const Cart = (props) => {
 
         <div className="selected-players">
         {
-            playersCart.map(player=><p className="addedPlayer">Name: {player.name} <br/> Base Price: ${player.base_price}</p>)
+            playersCart.map(player=><p className="addedPlayer">Name: {player.name} <br/>Price: ${player.base_price}</p>)
         }
         </div>
         </div>
