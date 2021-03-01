@@ -2,7 +2,7 @@
     display: flex;
 }
 .player-container{
-    width: 50%;
+    width: 65%;
     margin-left: 20px;
     margin-right: 5px;
     border-right: 1px solid lightgray;
